@@ -17,6 +17,6 @@ while True:
       "elevation": float(rand_elevation), "confidence": float(rand_confidence),
       "size": float(rand_size) }
   print data
-  r = requests.post("http://localhost:5000/event", json=json.dumps(data))
+  r = requests.post("http://localhost:5000/simulated_event", json=json.dumps(data))
   time.sleep(SLEEP_TIME)
 
